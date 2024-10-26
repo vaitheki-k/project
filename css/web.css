@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+                                          /* navbar section start */
+.nav-row{
+
+    display: flex;
+    justify-content:space-around ;
+}
+.nav-col{
+margin-top: 14px;
+cursor: pointer;
+}
+.nav-col1 img{
+    width: 140px;
+}
+.drop-down{
+    display: none;
+    position: absolute;
+    list-style: none;
+}
+.drop{
+    list-style: none;
+}
+.drop:hover .drop-down{
+display: block;
+
+}
+.drop-down{
+    padding:16px 3px 16px ;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid grey;
+}
+.nav-col a:hover {
+    text-decoration:underline;
+    color: #129b05;
+}
+.drop-down li{
+    padding: 8px;
+    color: black;
+}
+.drop-down li i{
+    padding-right: 6px;
+    color: black;
+}
+.navbar-container{
+    margin-top: 13px;
+    font-size: 23px;
+}
+.animated-button {
+    padding: 15px 30px;
+    font-size: 20px;
+    color: white;
+    background-color: #129b05;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.animated-button:hover {
+    background-color: black;
+    transform: scale(1.1); 
+}
+
+.animated-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease;
+    z-index: 0;
+}
+
+.animated-button:hover::before {
+    transform: translate(-50%, -50%) scale(1); 
+}
+
+.animated-button span {
+    position: relative;
+    z-index: 1; 
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+                                           /* navbar section end */
+
+
+
+ .container {
+margin-top: 40px;
+ }    
+ .container h2{
+   font-size: 30px;
+ }    
+ .container p{
+    font-size: 60px;
+    color: #129b05;
+ }                                  
